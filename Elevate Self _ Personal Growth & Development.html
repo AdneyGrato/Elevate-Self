@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///E:/Adney/The%20Charismatic%20Website.html?#attraction -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate Self | Personal Growth &amp; Development</title>
+    <link rel="stylesheet" href="./Elevate Self _ Personal Growth &amp; Development_files/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #6a11cb;
+            --secondary: #2575fc;
+            --accent: #ff3e7f;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --gray: #6c757d;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--accent);
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 30px;
+        }
+        
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.9)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin: 0 auto 2.5rem;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 62, 127, 0.4);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 62, 127, 0.5);
+            background: #ff2a6d;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            margin-left: 15px;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 1.5rem auto 0;
+            font-size: 1.2rem;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card-icon {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4.5rem;
+            color: white;
+        }
+        
+        .attraction-bg { background: linear-gradient(135deg, #ff3e7f, #ff2a6d); }
+        .hygiene-bg { background: linear-gradient(135deg, #00b4db, #0083b0); }
+        .study-bg { background: linear-gradient(135deg, #38ef7d, #11998e); }
+        .charm-bg { background: linear-gradient(135deg, #ffb347, #ffcc33); }
+        .books-bg { background: linear-gradient(135deg, #9d50bb, #6e48aa); }
+        .language-bg { background: linear-gradient(135deg, #4776e6, #8e54e9); }
+        
+        .card-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-content h3 {
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .card-content ul {
+            list-style: none;
+            margin: 15px 0 25px;
+            flex-grow: 1;
+        }
+        
+        .card-content li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        
+        .card-content li:last-child {
+            border-bottom: none;
+        }
+        
+        .card-content li i {
+            color: var(--primary);
+            min-width: 24px;
+            padding-top: 4px;
+        }
+        
+        .book-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .book-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .book-item:hover {
+            transform: translateY(-5px);
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .book-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+        
+        .book-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+        
+        .languages {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+        
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .language-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .language-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .language-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .language-card p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+        
+        .difficulty {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin: 15px 0;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+        }
+        
+        .dot.filled {
+            background: var(--accent);
+        }
+        
+        .testimonial {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-content i {
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 30px;
+        }
+        
+        .testimonial-content p {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .author {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .author span {
+            display: block;
+            font-weight: normal;
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .footer-column p {
+            color: #aaa;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-star"></i>
+                    <h1>Elevate<span>Self</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#attraction">Attraction</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#hygiene">Hygiene</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#study">Study</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#charm">Charm</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#books">Books</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#languages">Languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Unlock Your Full Potential</h2>
+                <p>Master the art of self-improvement with science-backed strategies for personal growth and success</p>
+                <a href="file:///E:/Adney/The%20Charismatic%20Website.html?#attraction" class="btn">Begin Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attraction Section -->
+    <section id="attraction" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Boost Your Attraction</h2>
+                <p>Science-backed strategies to enhance your natural appeal and magnetism</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon attraction-bg">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fundamentals of Attraction</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Confidence is key - stand tall and own your space</li>
+                            <li><i class="fas fa-check-circle"></i> Develop genuine interest in others</li>
+                            <li><i class="fas fa-check-circle"></i> Master the art of active listening</li>
+                            <li><i class="fas fa-check-circle"></i> Maintain positive body language (open posture, eye contact)</li>
+                            <li><i class="fas fa-check-circle"></i> Cultivate a sense of humor and playfulness</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon attraction-bg">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Advanced Techniques</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> The Flooding Smile</li>
+                            <li><i class="fas fa-check-circle"></i> Mastering the art of conversation threading</li>
+                            <li><i class="fas fa-check-circle"></i> Creating emotional connection through vulnerability</li>
+                            <li><i class="fas fa-check-circle"></i> The 70/30 rule of talking vs listening</li>
+                            <li><i class="fas fa-check-circle"></i> Using positive framing in your communication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hygiene Section -->
+    <section id="hygiene" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>How to Smell Nice</h2>
+                <p>Personal hygiene and fragrance mastery for lasting impressions</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon hygiene-bg">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Daily Hygiene Routine</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Shower daily with antibacterial soap</li>
+                            <li><i class="fas fa-check-circle"></i> Use antiperspirant, not just deodorant</li>
+                            <li><i class="fas fa-check-circle"></i> Brush teeth twice daily and floss regularly</li>
+                            <li><i class="fas fa-check-circle"></i> Maintain clean, trimmed nails</li>
+                            <li><i class="fas fa-check-circle"></i> Wear clean clothes made of breathable fabrics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon hygiene-bg">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fragrance Mastery</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Apply cologne to pulse points (wrists, neck, chest)</li>
+                            <li><i class="fas fa-check-circle"></i> The "less is more" rule for fragrance application</li>
+                            <li><i class="fas fa-check-circle"></i> Choose scents that complement your natural chemistry</li>
+                            <li><i class="fas fa-check-circle"></i> Seasonal fragrance selection (lighter in summer, warmer in winter)</li>
+                            <li><i class="fas fa-check-circle"></i> Layer scents with matching shower gel and lotion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Section -->
+    <section id="study" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>How to Study Effectively</h2>
+                <p>Proven techniques to maximize learning and retention</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon study-bg">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Study Techniques</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Active recall - test yourself instead of rereading</li>
+                            <li><i class="fas fa-check-circle"></i> Spaced repetition for long-term retention</li>
+                            <li><i class="fas fa-check-circle"></i> Pomodoro technique (25 min study, 5 min break)</li>
+                            <li><i class="fas fa-check-circle"></i> Feynman technique - teach what you learn</li>
+                            <li><i class="fas fa-check-circle"></i> Create mind maps for complex topics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon study-bg">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Optimal Study Environment</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Dedicated, distraction-free study space</li>
+                            <li><i class="fas fa-check-circle"></i> Natural lighting whenever possible</li>
+                            <li><i class="fas fa-check-circle"></i> Background music without lyrics (classical, lo-fi)</li>
+                            <li><i class="fas fa-check-circle"></i> Keep your space organized and clutter-free</li>
+                            <li><i class="fas fa-check-circle"></i> Ergonomics - comfortable chair at proper height</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charm Section -->
+    <section id="charm" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Influence &amp; Charm</h2>
+                <p>Develop charismatic presence and influential communication</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon charm-bg">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Communication Mastery</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Speak with clarity and conviction</li>
+                            <li><i class="fas fa-check-circle"></i> Master the art of storytelling</li>
+                            <li><i class="fas fa-check-circle"></i> Use people's names in conversation</li>
+                            <li><i class="fas fa-check-circle"></i> Ask open-ended questions to show interest</li>
+                            <li><i class="fas fa-check-circle"></i> Practice active listening skills</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon charm-bg">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Building Charisma</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Develop authentic presence and mindfulness</li>
+                            <li><i class="fas fa-check-circle"></i> Use power poses to boost confidence</li>
+                            <li><i class="fas fa-check-circle"></i> Maintain warm, genuine eye contact</li>
+                            <li><i class="fas fa-check-circle"></i> Offer sincere compliments regularly</li>
+                            <li><i class="fas fa-check-circle"></i> Master emotional intelligence skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Essential Books</h2>
+                <p>Life-changing literature for personal development</p>
+            </div>
+            <div class="card">
+                <div class="card-icon books-bg">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Must-Read Books for Personal Growth</h3>
+                    <div class="book-list">
+                        <div class="book-item">
+                            <h4>How to Win Friends &amp; Influence People</h4>
+                            <p>Dale Carnegie - The classic guide to interpersonal skills</p>
+                        </div>
+                        <div class="book-item">
+                            <h4>Atomic Habits</h4>
+                            <p>James Clear - Build good habits and break bad ones</p>
+                        </div>
+                        <div class="book-item">
+                            <h4>Mindset: The New Psychology of Success</h4>
+                            <p>Carol Dweck - Understand growth vs fixed mindset</p>
+                        </div>
+                        <div class="book-item">
+                            <h4>Influence: The Psychology of Persuasion</h4>
+                            <p>Robert Cialdini - Master the principles of persuasion</p>
+                        </div>
+                        <div class="book-item">
+                            <h4>The Charisma Myth</h4>
+                            <p>Olivia Fox Cabane - Learn to develop personal magnetism</p>
+                        </div>
+                        <div class="book-item">
+                            <h4>Deep Work</h4>
+                            <p>Cal Newport - Focus in a distracted world</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section languages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Language Learning</h2>
+                <p>Master multiple languages and expand your world</p>
+            </div>
+            <div class="language-grid">
+                <div class="language-card">
+                    <div class="language-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Spanish</h3>
+                    <p>The most practical second language for English speakers</p>
+                    <div class="difficulty">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <p>Difficulty: Easy</p>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>French</h3>
+                    <p>The language of culture, cuisine, and diplomacy</p>
+                    <div class="difficulty">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <p>Difficulty: Medium</p>
+                </div>
+                
+                <div class="language-card">
+                    <div class="language-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Mandarin Chinese</h3>
+                    <p>The world's most spoken language with economic importance</p>
+                    <div class="difficulty">
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                        <div class="dot filled"></div>
+                    </div>
+                    <p>Difficulty: Hard</p>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-top: 40px;">
+                <div class="card-icon language-bg">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Language Learning Strategies</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Start with the 100 most common words</li>
+                        <li><i class="fas fa-check-circle"></i> Practice daily for at least 20 minutes</li>
+                        <li><i class="fas fa-check-circle"></i> Use spaced repetition software (Anki)</li>
+                        <li><i class="fas fa-check-circle"></i> Focus on comprehensible input first</li>
+                        <li><i class="fas fa-check-circle"></i> Find a language exchange partner</li>
+                        <li><i class="fas fa-check-circle"></i> Immerse yourself with media in target language</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-content">
+                <i class="fas fa-quote-left"></i>
+                <p>Implementing these strategies transformed my personal and professional life. The attraction techniques boosted my confidence, the study methods improved my learning efficiency, and language skills opened doors I never imagined.</p>
+                <div class="author">
+                    Michael Anderson
+                    <span>Software Engineer &amp; Polyglot</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ElevateSelf</h3>
+                    <p>Your comprehensive guide to personal growth, self-improvement, and unlocking your full potential.</p>
+                    
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#attraction">Attraction Boosters</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#hygiene">Fragrance Guide</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#study">Study Techniques</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#charm">Charisma Development</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#books">Recommended Books</a></li>
+                        <li><a href="file:///E:/Adney/The%20Charismatic%20Website.html?#languages">Language Learning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    
+	            <section>
+        
+        <ul>
+            <li><a href="https://www.dailyhabits.xyz/" target="_blank">Daily Habit Tracker</a></li>
+            <li><a href="https://mystudylife.com/" target="_blank">Study Planner</a></li>
+            <li><a href="https://preply.com/en/blog/language-study-planner/" target="_blank">Language Learning Schedule</a></li>
+            <li><a href="https://thespeakerlab.com/blog/confidence-building-exercises/" target="_blank">Confidence Building Exercises</a></li>
+            <li><a href="https://www.crossword.in/" target="_blank">Recommended Book Store</a></li>
+        </ul>
+    </section>
+
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Email us for any tips or feedback needed.</p>
+                    <form style="margin-top: 15px;">
+                                                                   </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 ElevateSelf - Personal Growth &amp; Development. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body></html>
